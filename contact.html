@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - ToolConverts.com</title>
+    <meta name="description" content="Liên hệ với đội ngũ ToolConverts.com để được hỗ trợ kỹ thuật, báo cáo lỗi, đề xuất tính năng mới. Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn.">
+    <meta name="keywords" content="liên hệ toolconverts, hỗ trợ kỹ thuật, báo cáo lỗi, góp ý">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://toolconverts.com/lien-he">
+    <meta property="og:title" content="Liên hệ - ToolConverts.com">
+    <meta property="og:description" content="Liên hệ với đội ngũ ToolConverts.com để được hỗ trợ">
+    
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1f2937;
+            text-decoration: none;
+        }
+
+        .logo .blue {
+            color: #2563eb;
+        }
+
+        .badge {
+            margin-left: 0.5rem;
+            font-size: 0.875rem;
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        .breadcrumb a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .main-content {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .page-subtitle {
+            font-size: 1.125rem;
+            color: #6b7280;
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        /* Contact Methods */
+        .contact-methods {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .contact-methods {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .contact-card {
+            background: #f8fafc;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .contact-card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+
+        .contact-icon svg {
+            width: 1.25rem;
+            height: 1.25rem;
+            color: white;
+        }
+
+        .contact-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .contact-description {
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            color: #2563eb;
+            font-weight: 500;
+        }
+
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: #f8fafc;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .form-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .form-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .form-control[type="textarea"] {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            background: white;
+        }
+
+        .btn-submit {
+            background: #2563eb;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        .btn-submit:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Response Time */
+        .response-info {
+            background: #ecfdf5;
+            border: 1px solid #10b981;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .response-info h4 {
+            color: #047857;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .response-info p {
+            color: #047857;
+        }
+
+        /* FAQ Quick Links */
+        .faq-links {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .faq-links h3 {
+            color: #92400e;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .faq-links-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .faq-links-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .faq-link {
+            color: #92400e;
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            transition: background 0.2s;
+        }
+
+        .faq-link:hover {
+            background: rgba(146, 64, 14, 0.1);
+        }
+
+        /* Office Hours */
+        .office-hours {
+            background: #eff6ff;
+            border: 1px solid #2563eb;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .office-hours h3 {
+            color: #1e40af;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .hours-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem;
+            color: #1e40af;
+        }
+
+        /* Footer */
+        .footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .footer p {
+            color: #9ca3af;
+        }
+
+        .footer a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .contact-form {
+                padding: 1.5rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">
+                <span class="blue">Tool</span>Converts<span class="badge">.com</span>
+            </a>
+            <div class="breadcrumb">
+                <a href="/">Trang chủ</a>
+                <span>→</span>
+                <span>Liên hệ</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="main-content">
+            <h1 class="page-title">Liên hệ với chúng tôi</h1>
+            <p class="page-subtitle">
+                Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn. 
+                Hãy liên hệ với chúng tôi qua các kênh dưới đây hoặc gửi tin nhắn trực tiếp.
+            </p>
+
+            <!-- Contact Methods -->
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <div class="contact-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="contact-title">Hỗ trợ kỹ thuật</h3>
+                    </div>
+                    <p class="contact-description">
+                        Gặp khó khăn khi sử dụng? Cần hỗ trợ kỹ thuật? 
+                        Đội ngũ của chúng tôi sẵn sàng giúp đỡ bạn.
+                    </p>
+                    <div class="contact-info">
+                        <a href="mailto:support@toolconverts.com">support@toolconverts.com</a><br>
+                        <small>Phản hồi trong 24-48 giờ</small>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <div class="contact-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="contact-title">Báo cáo lỗi</h3>
+                    </div>
+                    <p class="contact-description">
+                        Phát hiện lỗi trong quá trình sử dụng? 
+                        Báo cáo để chúng tôi khắc phục nhanh chóng.
+                    </p>
+                    <div class="contact-info">
+                        <a href="mailto:bugs@toolconverts.com">bugs@toolconverts.com</a><br>
+                        <small>Ưu tiên xử lý trong 24 giờ</small>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <div class="contact-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <h3 class="contact-title">Đề xuất tính năng</h3>
+                    </div>
+                    <p class="contact-description">
+                        Có ý tưởng cho tính năng mới? 
+                        Chúng tôi luôn chào đón mọi đóng góp từ cộng đồng.
+                    </p>
+                    <div class="contact-info">
+                        <a href="mailto:feedback@toolconverts.com">feedback@toolconverts.com</a><br>
+                        <small>Tất cả ý kiến đều được ghi nhận</small>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <div class="contact-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2V6z" />
+                            </svg>
+                        </div>
+                        <h3 class="contact-title">Hợp tác doanh nghiệp</h3>
+                    </div>
+                    <p class="contact-description">
+                        Quan tâm đến việc tích hợp dịch vụ vào hệ thống của bạn? 
+                        Liên hệ để thảo luận về hợp tác.
+                    </p>
+                    <div class="contact-info">
+                        <a href="mailto:business@toolconverts.com">business@toolconverts.com</a><br>
+                        <small>Tư vấn miễn phí</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Response Time Info -->
+            <div class="response-info">
+                <h4>⏰ Thời gian phản hồi</h4>
+                <p>
+                    Chúng tôi cam kết phản hồi email trong vòng <strong>24-48 giờ làm việc</strong>. 
+                    Các báo cáo lỗi nghiêm trọng sẽ được ưu tiên xử lý trong <strong>24 giờ</strong>.
+                </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2 class="form-title">📝 Gửi tin nhắn trực tiếp</h2>
+                <form id="contactForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Họ và tên *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Chủ đề *</label>
+                        <select id="subject" name="subject" class="form-select" required>
+                            <option value="">Chọn chủ đề...</option>
+                            <option value="support">Hỗ trợ kỹ thuật</option>
+                            <option value="bug">Báo cáo lỗi</option>
+                            <option value="feature">Đề xuất tính năng</option>
+                            <option value="business">Hợp tác doanh nghiệp</option>
+                            <option value="other">Khác</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message" class="form-label">Nội dung *</label>
+                        <textarea id="message" name="message" class="form-control" rows="6" 
+                                  placeholder="Mô tả chi tiết vấn đề hoặc ý kiến của bạn..." required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="submit" class="btn-submit">
+                            📧 Gửi tin nhắn
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- FAQ Quick Links -->
+            <div class="faq-links">
+                <h3>❓ Có thể bạn cần</h3>
+                <div class="faq-links-grid">
+                    <a href="/huong-dan" class="faq-link">📖 Hướng dẫn sử dụng</a>
+                    <a href="/cau-hoi-thuong-gap" class="faq-link">🙋 Câu hỏi thường gặp</a>
+                    <a href="/chinh-sach-bao-mat" class="faq-link">🔐 Chính sách bảo mật</a>
+                    <a href="/dieu-khoan-su-dung" class="faq-link">📋 Điều khoản sử dụng</a>
+                </div>
+            </div>
+
+            <!-- Office Hours -->
+            <div class="office-hours">
+                <h3>🕒 Giờ làm việc hỗ trợ</h3>
+                <div class="hours-grid">
+                    <div class="hours-item">
+                        <span>Thứ 2 - Thứ 6:</span>
+                        <span>8:00 - 17:00 (GMT+7)</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Thứ 7:</span>
+                        <span>9:00 - 12:00 (GMT+7)</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Chủ nhật:</span>
+                        <span>Nghỉ</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Lễ, Tết:</span>
+                        <span>Nghỉ theo lịch</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info Summary -->
+            <div style="background: #f8fafc; border-radius: 0.5rem; padding: 1.5rem; margin-top: 2rem;">
+                <h3 style="color: #1f2937; margin-bottom: 1rem; text-align: center;">📍 Thông tin liên hệ</h3>
+                <div style="text-align: center; color: #6b7280;">
+                    <p><strong>Công ty:</strong> ToolConverts.com</p>
+                    <p><strong>Địa chỉ:</strong> Thành phố Hồ Chí Minh, Việt Nam</p>
+                    <p><strong>Website:</strong> <a href="https://toolconverts.com" style="color: #2563eb;">https://toolconverts.com</a></p>
+                    <p><strong>Ngôn ngữ hỗ trợ:</strong> Tiếng Việt, English</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy; 2025 ToolConverts.com. Tất cả quyền được bảo lưu. | 
+                <a href="/">Trang chủ</a> | 
+                <a href="/chinh-sach-bao-mat">Chính sách bảo mật</a> | 
+                <a href="/dieu-khoan-su-dung">Điều khoản sử dụng</a> | 
+                <a href="/huong-dan">Hướng dẫn</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Basic validation
+            if (!data.name || !data.email || !data.subject || !data.message) {
+                alert('Vui lòng điền đầy đủ thông tin bắt buộc.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.email)) {
+                alert('Vui lòng nhập email hợp lệ.');
+                return;
+            }
+            
+            // Disable submit button
+            const submitBtn = this.querySelector('.btn-submit');
+            const originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = '📤 Đang gửi...';
+            
+            // Simulate sending (replace with actual implementation)
+            setTimeout(() => {
+                alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong vòng 24-48 giờ.');
+                this.reset();
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            }, 2000);
+        });
+        
+        // Auto-fill subject based on URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const subjectParam = urlParams.get('subject');
+        if (subjectParam) {
+            document.getElementById('subject').value = subjectParam;
+        }
+        
+        // Character counter for message
+        const messageTextarea = document.getElementById('message');
+        const charCounter = document.createElement('small');
+        charCounter.style.color = '#6b7280';
+        charCounter.style.float = 'right';
+        messageTextarea.parentNode.appendChild(charCounter);
+        
+        messageTextarea.addEventListener('input', function() {
+            const length = this.value.length;
+            charCounter.textContent = `${length}/1000 ký tự`;
+            if (length > 1000) {
+                this.value = this.value.substring(0, 1000);
+                charCounter.textContent = '1000/1000 ký tự (tối đa)';
+            }
+        });
+    </script>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Liên hệ - ToolConverts.com",
+        "url": "https://toolconverts.com/lien-he",
+        "description": "Liên hệ với đội ngũ ToolConverts.com để được hỗ trợ",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "ToolConverts.com",
+            "url": "https://toolconverts.com",
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "contactType": "Customer Support",
+                    "email": "support@toolconverts.com",
+                    "availableLanguage": ["Vietnamese", "English"]
+                },
+                {
+                    "@type": "ContactPoint", 
+                    "contactType": "Technical Support",
+                    "email": "bugs@toolconverts.com",
+                    "availableLanguage": ["Vietnamese", "English"]
+                },
+                {
+                    "@type": "ContactPoint",
+                    "contactType": "Business",
+                    "email": "business@toolconverts.com",
+                    "availableLanguage": ["Vietnamese", "English"]
+                }
+            ]
+        }
+    }
+    </script>
+</body>
+</html>
